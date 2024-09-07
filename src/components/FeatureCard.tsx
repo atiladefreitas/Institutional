@@ -8,12 +8,17 @@ interface FeatureCardProps {
 
 function FeatureCard({ title, children }: FeatureCardProps) {
 	return (
-		<Card color="transparent" shadow={false}>
-			<CardBody className="grid px-0">
-				<Typography variant="h4" color="white" className="mb-2">
+		<Card color="transparent" shadow={false} placeholder={""}>
+			<CardBody className="grid px-0" placeholder={""}>
+				<Typography
+					variant="h4"
+					color="white"
+					className="mb-2"
+					placeholder={""}
+				>
 					{title}
 				</Typography>
-				<Typography className="font-normal !text-gray-400">
+				<Typography className="font-normal !text-gray-400" placeholder={""}>
 					{children}
 				</Typography>
 			</CardBody>
@@ -54,13 +59,18 @@ export function FeatureSection12() {
 				</div>
 				<div className="col-span-2 mx-auto max-w-xl">
 					<Typography
+						placeholder={""}
 						variant="h2"
 						color="white"
 						className="mb-4 !text-2xl font-bold lg:!text-3xl"
 					>
 						Our Services{" "}
 					</Typography>
-					<Typography variant="lead" className="mb-10 !text-gray-400">
+					<Typography
+						placeholder={""}
+						variant="lead"
+						className="mb-10 !text-gray-400"
+					>
 						Comprehensive Digital Solutions
 					</Typography>
 

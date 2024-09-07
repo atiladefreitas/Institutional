@@ -61,8 +61,9 @@ interface FeatureCardProps {
 
 function FeatureCard({ icon, title, children }: FeatureCardProps) {
 	return (
-		<Card className="grid" color="transparent" shadow={false}>
+		<Card placeholder={""} className="grid" color="transparent" shadow={false}>
 			<CardHeader
+				placeholder={""}
 				shadow={false}
 				floated={false}
 				color="transparent"
@@ -70,11 +71,20 @@ function FeatureCard({ icon, title, children }: FeatureCardProps) {
 			>
 				{icon}
 			</CardHeader>
-			<CardBody className="px-4">
-				<Typography variant="h5" color="white" className="mb-2">
+			<CardBody placeholder={""} className="px-4">
+				<Typography
+					variant="h5"
+					placeholder={""}
+					color="white"
+					className="mb-2"
+				>
 					{title}
 				</Typography>
-				<Typography color="white" className="font-normal lg:max-w-xs">
+				<Typography
+					color="white"
+					placeholder={""}
+					className="font-normal lg:max-w-xs"
+				>
 					{children}
 				</Typography>
 			</CardBody>
@@ -108,7 +118,12 @@ export default function Home() {
 					</div>
 
 					<div className="w-full p-16">
-						<Typography variant="h2" color="white" className="mb-12">
+						<Typography
+							placeholder={""}
+							variant="h2"
+							color="white"
+							className="mb-12"
+						>
 							Comprehensive Digital Solutions
 						</Typography>
 						<div className="col-span-2 grid grid-cols-1 gap-8 sm:grid-cols-2">
