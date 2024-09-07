@@ -21,6 +21,7 @@ export function MacbookScrollDemo() {
 						height={200}
 						alt="desc"
 						className="shadow-lg rounded-md"
+						unoptimized
 					/>
 				</div>
 			</div>

@@ -14,6 +14,7 @@ export function ThreeDCardDemo() {
 					className="text-xl right-0 font-bold text-white absolute z-50"
 				>
 					<Image
+						unoptimized
 						src="/component.png"
 						width={250}
 						height={200}
@@ -22,6 +23,7 @@ export function ThreeDCardDemo() {
 				</CardItem>
 				<CardItem translateZ="100" className=" z-10 mr-8 my-8">
 					<Image
+						unoptimized
 						src="/mocked_wellcome.png"
 						width={250}
 						height={100}
@@ -32,7 +34,13 @@ export function ThreeDCardDemo() {
 					translateZ="200"
 					className="text-xl font-bold text-white absolute z-50 bottom-5 left-10"
 				>
-					<Image src="/info.png" width={200} height={100} alt="component" />
+					<Image
+						unoptimized
+						src="/info.png"
+						width={200}
+						height={100}
+						alt="component"
+					/>
 				</CardItem>
 			</CardBody>
 		</CardContainer>
