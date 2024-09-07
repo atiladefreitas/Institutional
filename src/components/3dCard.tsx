@@ -25,6 +25,7 @@ export function ThreeDCardDemo() {
 					<Image
 						unoptimized
 						priority
+						placeholder="blur"
 						blurDataURL="L9A^X.R*00s;~pWV9ZoLD%og-;Rj"
 						src="/mocked_wellcome.png"
 						width={250}
