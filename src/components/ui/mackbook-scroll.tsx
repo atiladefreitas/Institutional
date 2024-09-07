@@ -166,6 +166,8 @@ export const Lid = ({
 			>
 				<div className="absolute inset-0 bg-[#272729]/10 rounded-lg" />
 				<Image
+					blurDataURL="LTNTzY00_3IURjaxWCWB~q%MRjxt"
+					priority
 					unoptimized
 					src={src as string}
 					alt="aceternity logo"

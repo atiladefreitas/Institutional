@@ -24,6 +24,8 @@ export function ThreeDCardDemo() {
 				<CardItem translateZ="100" className=" z-10 mr-8 my-8">
 					<Image
 						unoptimized
+						priority
+						blurDataURL="L9A^X.R*00s;~pWV9ZoLD%og-;Rj"
 						src="/mocked_wellcome.png"
 						width={250}
 						height={100}
