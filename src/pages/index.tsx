@@ -1,22 +1,16 @@
-import Head from "next/head";
 import Image from "next/image";
 import {
 	Typography,
 	Card,
-	Button,
 	CardBody,
 	CardHeader,
+	IconButton,
 } from "@material-tailwind/react";
 import { SpotlightPreview } from "@/components/Spotlight";
 import { TextGenerateEffectDemo } from "@/components/TextGenerator";
 import { ThreeDCardDemo } from "@/components/3dCard";
-import FeatureSection12 from "@/components/FeatureCard";
 
 import {
-	CreditCardIcon,
-	HomeIcon,
-	TagIcon,
-	VideoCameraIcon,
 	GlobeAltIcon,
 	DevicePhoneMobileIcon,
 	PuzzlePieceIcon,
@@ -25,6 +19,9 @@ import {
 import { MacbookScrollDemo } from "@/components/MacbookScroll";
 import { HeroHighlightDemo } from "@/components/HeroHighlight";
 import { LampDemo } from "@/components/ui/lamp";
+import { FlipWordsDemo } from "@/components/FlipWords";
+import { Linkedin, Mail } from "lucide-react";
+import { IconBrandLinkedin, IconBrandWhatsapp } from "@tabler/icons-react";
 
 const features = [
 	{
@@ -141,6 +138,38 @@ export default function Home() {
 			<HeroHighlightDemo />
 
 			<LampDemo />
+
+			<div className="h-[40rem] w-full dark:bg-black bg-white  dark:bg-dot-white/[0.2] bg-dot-black/[0.2] relative flex flex-col items-center justify-center">
+				<div className="absolute pointer-events-none inset-0 flex items-center justify-center dark:bg-black bg-white [mask-image:radial-gradient(ellipse_at_center,transparent_20%,black)]"></div>
+				<div className="w-full max-w-6xl flex z-50 justify-between pr-">
+					<FlipWordsDemo />
+
+					<div className="flex items-center gap-2">
+						<IconButton placeholder={""} variant="filled">
+							<Linkedin />
+						</IconButton>
+
+						<IconButton placeholder={""} variant="filled">
+							<Mail />
+						</IconButton>
+
+						<IconButton placeholder={""} variant="filled">
+							<IconBrandWhatsapp />
+						</IconButton>
+					</div>
+				</div>
+
+				<div className="w-[50%] h-fit flex flex-col items-center px-6 py-12 m-12 bg-[#1b1b1b] z-50 rounded-2xl gap-4">
+					<Image
+						src="/logo-defenitive.png"
+						width={70}
+						height={100}
+						alt="Logo"
+					/>
+
+					<Image src="/code-presence.png" width={250} height={100} alt="Logo" />
+				</div>
+			</div>
 		</section>
 	);
 }

@@ -1,5 +1,6 @@
 import React from "react";
 import { Spotlight } from "./ui/Spotlight";
+import { TextHoverEffectDemo } from "./HoverEffect";
 
 export function SpotlightPreview() {
 	return (
@@ -12,7 +13,7 @@ export function SpotlightPreview() {
 				<p className="mt-4 font-normal text-xl text-gray-300 max-w-xl text-center mx-auto">
 					Code Presence is an software boutique that transforms your ideas into
 					reality. We blend programming, marketing, and branding to craft
-					high-quality web and mobile solutions. copy.
+					high-quality web and mobile solutions.
 				</p>
 			</div>
 		</div>
