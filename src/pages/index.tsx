@@ -99,12 +99,12 @@ export default function Home() {
 				<TextGenerateEffectDemo />
 			</div>
 
-			<div className="h-[50rem] w-full bg-black  bg-grid-small-white/[0.2] relative flex items-center justify-center">
+			<div className="h-fit md:h-[50rem] w-full bg-black  bg-grid-small-white/[0.2] relative flex items-center justify-center">
 				{/* Radial gradient for the container to give a faded look */}
 				<div className="absolute pointer-events-none inset-0 flex items-center justify-center bg-black [mask-image:radial-gradient(ellipse_at_center,transparent_20%,black)]"></div>
 
 				<div className="w-full flex max-w-7xl justify-between">
-					<div className="h-full relative">
+					<div className="h-full hidden relative md:flex">
 						<div className="z-50">
 							<ThreeDCardDemo />
 						</div>
@@ -145,13 +145,23 @@ export default function Home() {
 					<FlipWordsDemo />
 
 					<div className="flex items-center gap-2">
-						<IconButton placeholder={""} variant="filled">
-							<Linkedin />
-						</IconButton>
+						<a
+							href="https://www.linkedin.com/company/code-presence/about/"
+							target="_blank"
+						>
+							<IconButton placeholder={""} variant="filled">
+								<Linkedin />
+							</IconButton>
+						</a>
 
-						<IconButton placeholder={""} variant="filled">
-							<Mail />
-						</IconButton>
+						<a
+							href="mailto:contact@codepresence.com?subject=I%20want%20to%20bring%30my%20ideia%t0%20light"
+							target="_blank"
+						>
+							<IconButton placeholder={""} variant="filled">
+								<Mail />
+							</IconButton>
+						</a>
 
 						<IconButton placeholder={""} variant="filled">
 							<IconBrandWhatsapp />
