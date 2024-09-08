@@ -22,6 +22,7 @@ import { LampDemo } from "@/components/ui/lamp";
 import { FlipWordsDemo } from "@/components/FlipWords";
 import { Linkedin, Mail } from "lucide-react";
 import { IconBrandLinkedin, IconBrandWhatsapp } from "@tabler/icons-react";
+import { HeroScrollDemo } from "@/components/ContainerScroll";
 
 const features = [
 	{
@@ -135,6 +136,9 @@ export default function Home() {
 			</div>
 
 			<MacbookScrollDemo />
+
+			<HeroScrollDemo />
+
 			<HeroHighlightDemo />
 
 			<LampDemo />
