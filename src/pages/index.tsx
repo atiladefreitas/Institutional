@@ -137,15 +137,33 @@ export default function Home() {
 
 			<MacbookScrollDemo />
 
-			<HeroScrollDemo />
+			<div className="h-[50%] w-full -mb-8 dark:bg-black bg-white  dark:bg-dot-white/[0.2] bg-dot-black/[0.2] relative md:hidden flex flex-col items-center justify-center">
+				<div className="absolute pointer-events-none inset-0 flex items-center justify-center dark:bg-black bg-white [mask-image:radial-gradient(ellipse_at_center,transparent_20%,black)]"></div>
+				<span className="text-center flex flex-col z-50 -mb-10">
+					<Typography className="text-2xl font-medium -mb-2" placeholder={""}>
+						From concept
+					</Typography>
+					<Typography className="text-6xl font-bold" placeholder={""}>
+						to Launch
+					</Typography>
+				</span>
+
+				<Image
+					src="/aulas_tab.png"
+					width={500}
+					height={500}
+					alt="Aulas Tab"
+					className="z-40"
+				/>
+			</div>
 
 			<HeroHighlightDemo />
 
 			<LampDemo />
 
-			<div className="h-[40rem] w-full dark:bg-black bg-white  dark:bg-dot-white/[0.2] bg-dot-black/[0.2] relative flex flex-col items-center justify-center">
+			<div className="h-[40rem] px-4 w-full dark:bg-black bg-white  dark:bg-dot-white/[0.2] bg-dot-black/[0.2] relative flex flex-col items-center justify-center">
 				<div className="absolute pointer-events-none inset-0 flex items-center justify-center dark:bg-black bg-white [mask-image:radial-gradient(ellipse_at_center,transparent_20%,black)]"></div>
-				<div className="w-full max-w-6xl flex z-50 justify-between pr-">
+				<div className="w-full max-w-6xl flex z-50 justify-between flex-col md:flex-row items-center gap-12">
 					<FlipWordsDemo />
 
 					<div className="flex items-center gap-2">
@@ -173,7 +191,7 @@ export default function Home() {
 					</div>
 				</div>
 
-				<div className="w-[50%] h-fit flex flex-col items-center px-6 py-12 m-12 bg-[#1b1b1b] z-50 rounded-2xl gap-4">
+				<div className="w-full md:w-[50%] h-fit flex flex-col items-center px-6 py-12 m-12 bg-[#1b1b1b] z-50 rounded-2xl gap-4">
 					<Image
 						src="/logo-defenitive.png"
 						width={70}
