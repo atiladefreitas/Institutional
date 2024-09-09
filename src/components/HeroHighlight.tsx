@@ -22,7 +22,8 @@ export function HeroHighlightDemo() {
 			>
 				We turn concepts into reality through a proven process: understanding
 				your vision, strategic planning, agile development, rigorous quality
-				assurance, timely delivery, and ongoing support.{" "}
+				assurance, timely delivery, and ongoing support. <br />
+				<br />
 				<Highlight className="text-black dark:text-white">
 					Your success is our priority from start to finish.
 				</Highlight>

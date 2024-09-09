@@ -23,6 +23,13 @@ import { FlipWordsDemo } from "@/components/FlipWords";
 import { Linkedin, Mail } from "lucide-react";
 import { IconBrandLinkedin, IconBrandWhatsapp } from "@tabler/icons-react";
 import { HeroScrollDemo } from "@/components/ContainerScroll";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+	title: "Coding Beauty",
+	description:
+		"codingbeautydev.com: Coding - the art, the science, and the passion.",
+};
 
 const features = [
 	{
@@ -177,21 +184,25 @@ export default function Home() {
 						</a>
 
 						<a
-							href="mailto:contact@codepresence.com?subject=I%20want%20to%20bring%30my%20ideia%t0%20light"
+							href="mailto:contact@codepresence.com?subject=I%20want%20to%20bring%20my%20ideia%20to%20light"
 							target="_blank"
 						>
 							<IconButton placeholder={""} variant="filled">
 								<Mail />
 							</IconButton>
 						</a>
-
-						<IconButton placeholder={""} variant="filled">
-							<IconBrandWhatsapp />
-						</IconButton>
+						<a
+							href="https://wa.me/+5584991097445?text=I%20want%20to%20bring%20my%20ideia%20to%20light!"
+							target="_blank"
+						>
+							<IconButton placeholder={""} variant="filled">
+								<IconBrandWhatsapp />
+							</IconButton>
+						</a>
 					</div>
 				</div>
 
-				<div className="w-full md:w-[50%] h-fit flex flex-col items-center px-6 py-12 m-12 bg-[#1b1b1b] z-50 rounded-2xl gap-4">
+				<div className="w-full md:max-w-6xl h-fit flex flex-col items-center px-6 py-12 m-12 bg-[#1b1b1b] z-50 rounded-2xl gap-4">
 					<Image
 						src="/logo-defenitive.png"
 						width={70}
