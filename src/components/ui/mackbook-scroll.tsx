@@ -649,5 +649,5 @@ export const OptionKey = ({ className }: { className: string }) => {
 };
 
 const AceternityLogo = () => {
-	return <Image src="/logo-cp.png" width={75} height={75} alt="logo" />;
+	return <Image src="/logo-cp.webp" width={75} height={75} alt="logo" />;
 };

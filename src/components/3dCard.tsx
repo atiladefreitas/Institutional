@@ -15,7 +15,7 @@ export function ThreeDCardDemo() {
 				>
 					<Image
 						unoptimized
-						src="/component.png"
+						src="/component.webp"
 						width={250}
 						height={200}
 						alt="component"
@@ -27,7 +27,7 @@ export function ThreeDCardDemo() {
 						priority
 						placeholder="blur"
 						blurDataURL="L9A^X.R*00s;~pWV9ZoLD%og-;Rj"
-						src="/mocked_wellcome.png"
+						src="/mocked_wellcome.webp"
 						width={250}
 						height={100}
 						alt="component"
@@ -39,7 +39,7 @@ export function ThreeDCardDemo() {
 				>
 					<Image
 						unoptimized
-						src="/info.png"
+						src="/info.webp"
 						width={200}
 						height={100}
 						alt="component"

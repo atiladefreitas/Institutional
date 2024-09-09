@@ -15,7 +15,7 @@ export function MacbookScrollDemo() {
 						<b className="text-6xl">to Launch</b>
 					</span>
 				}
-				src={`/aulas.png`}
+				src={`/aulas.webp`}
 				showGradient={false}
 			/>
 
@@ -26,7 +26,7 @@ export function MacbookScrollDemo() {
 						className="font-bold"
 					>
 						<Image
-							src="/am_app_desc.png"
+							src="/am_app_desc.webp"
 							width={300}
 							height={200}
 							alt="desc"

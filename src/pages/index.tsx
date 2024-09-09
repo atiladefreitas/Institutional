@@ -118,7 +118,7 @@ export default function Home() {
 						</div>
 
 						<div className=" absolute bottom-0 mb-5 right-0 z-0">
-							<Image src="/app_desc.png" width={250} height={200} alt="desc" />
+							<Image src="/app_desc.webp" width={250} height={200} alt="desc" />
 						</div>
 					</div>
 
@@ -156,7 +156,7 @@ export default function Home() {
 				</span>
 
 				<Image
-					src="/aulas_tab.png"
+					src="/aulas_tab.webp"
 					width={500}
 					height={500}
 					alt="Aulas Tab"
@@ -175,27 +175,45 @@ export default function Home() {
 
 					<div className="flex items-center gap-2">
 						<a
+							aria-label="LinkedIn Button"
 							href="https://www.linkedin.com/company/code-presence/about/"
 							target="_blank"
 						>
-							<IconButton placeholder={""} variant="filled">
+							<IconButton
+								id="LinkedIn Button"
+								title="LikedIn Button"
+								placeholder={""}
+								variant="filled"
+							>
 								<Linkedin />
 							</IconButton>
 						</a>
 
 						<a
+							aria-label="Mail Button"
 							href="mailto:contact@codepresence.com?subject=I%20want%20to%20bring%20my%20ideia%20to%20light"
 							target="_blank"
 						>
-							<IconButton placeholder={""} variant="filled">
+							<IconButton
+								id="Mail Button"
+								title="Mail Button"
+								placeholder={""}
+								variant="filled"
+							>
 								<Mail />
 							</IconButton>
 						</a>
 						<a
+							aria-label="WhatsApp Button"
 							href="https://wa.me/+5584991097445?text=I%20want%20to%20bring%20my%20ideia%20to%20light!"
 							target="_blank"
 						>
-							<IconButton placeholder={""} variant="filled">
+							<IconButton
+								id="WhatsApp Button"
+								title="WhatsApp Button"
+								placeholder={""}
+								variant="filled"
+							>
 								<IconBrandWhatsapp />
 							</IconButton>
 						</a>
@@ -204,13 +222,18 @@ export default function Home() {
 
 				<div className="w-full md:max-w-6xl h-fit flex flex-col items-center px-6 py-12 m-12 bg-[#1b1b1b] z-50 rounded-2xl gap-4">
 					<Image
-						src="/logo-defenitive.png"
+						src="/logo-defenitive.webp"
 						width={70}
 						height={100}
 						alt="Logo"
 					/>
 
-					<Image src="/code-presence.png" width={250} height={100} alt="Logo" />
+					<Image
+						src="/code-presence.webp"
+						width={250}
+						height={100}
+						alt="Logo"
+					/>
 				</div>
 			</div>
 		</section>
